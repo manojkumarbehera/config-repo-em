@@ -18,7 +18,7 @@ eureka:
 zuul:
   routes:
     userservice: /user/**
-    itemservice: /item/**
+    addressservice: /address/**
   ignored-services: '*'
   prefix: /api
   sensitive-headers: Cookie, Set-Cookie
@@ -29,7 +29,7 @@ logging:
   level:
     com.netflix: WARN
     org.springframework.web: WARN
-    com.itemsharing: DEBUG
+    com.manojbehera: DEBUG
 
 management:
   security:
@@ -43,7 +43,7 @@ management:
 #           timeout:
 #             enabled: false
 
-itemservice.ribbon.ReadTimeout: 5000
+addressservice.ribbon.ReadTimeout: 5000
 userservice.ribbon.ReadTimeout: 5000
 authorizationservice.ribbon.ReadTimeout: 5000
     

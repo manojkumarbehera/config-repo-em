@@ -5,7 +5,7 @@ logging:
   level:
     com.netflix: WARN
     com.springframework.web: WARN
-    com.itemsharing: DEBUG
+    com.manojbehera: DEBUG
 
 eureka:
   instance:
